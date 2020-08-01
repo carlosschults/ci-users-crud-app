@@ -1,0 +1,28 @@
+<div align='center'><h1>Simple Users Crud</h1></div>
+
+<div>
+  <table class="table" style="width: 80%">
+    <tr>
+      <th>Name</th>
+      <th>Username</th>
+      <th>E-mail</th>
+    </tr>
+    <tr *ngFor="let user of users">
+      <td>
+        {{user.name}}
+      </td>
+      <td>
+        {{user.username}}
+      </td>
+      <td>
+        {{user.email}}
+      </td>
+    </tr>
+  </table>
+</div>
+<div>
+  <p>
+    <button (click)="addUser()"> Add User</button>
+  </p>
+</div>
+<router-outlet></router-outlet>
